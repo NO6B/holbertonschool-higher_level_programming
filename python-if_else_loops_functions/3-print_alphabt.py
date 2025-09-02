@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 i = 97
-while i < 123:
+while i <= 122:
     if chr(i) == 'q' or chr(i) == 'e':
         i +=1
         continue
