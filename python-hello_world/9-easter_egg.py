@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import this
  
 # Décodage du Zen de Python
