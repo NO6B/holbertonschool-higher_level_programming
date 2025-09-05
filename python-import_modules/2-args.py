@@ -7,7 +7,7 @@ if __name__ == "__main__":
     elif len(arguments) > 1:
         argm = "arguments"
     elif len(arguments) < 1:
-        argm = "."
+        argm = "argument"
 
     print(f"{len(arguments)} {argm}:")
     
