@@ -3,17 +3,14 @@ import sys
 
 if __name__ == "__main__":
 
+    argument = len(sys.argv) -1
 
-
-    arguments = (sys.argv)
-    argv = len(arguments)-1
-
-    if argv == 0:
+    if argument == 0:
         print("0 arguments.")
-    elif argv == 1:
+    elif argument == 1:
         print("1 argument:")
     else:
-        print("{} arguments:".format(argv))
+        print("{} arguments:".format(argument))
 
-    for i in range(argv):
-        print("{}: {}".format(i + 1, arguments[i + 1]))
+    for i in range(1, len(sys.argv)):
+        print("{}: {}".format(i, sys.argv[i]))
