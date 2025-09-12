@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+This module provides a function to add two numbers (integers or floats).
+The function ensures input validation and type conversion before returning
+the result as an integer.
+"""
 def add_integer(a, b=98):
     """
     Adds two integers or floats and returns the result as an integer.
