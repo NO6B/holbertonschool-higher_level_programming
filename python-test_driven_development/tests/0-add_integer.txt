@@ -1,4 +1,4 @@
->>> import __import__('0-add_integer') as m
+>>> m = __import__('0-add_integer')
 >>> m.add_integer(1, 2)
 3
 >>> m.add_integer(100, -2)
