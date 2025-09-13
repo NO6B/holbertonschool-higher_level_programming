@@ -1,0 +1,32 @@
+Import the function from the module:
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Basic usage:
+
+    >>> text_indentation("Hello. How are you? I am fine:")
+    Hello.
+
+    How are you?
+
+    I am fine:
+
+Handling multiple sentences:
+
+    >>> text_indentation("This is a test. Another test? And one more:")
+    This is a test.
+
+    Another test?
+
+    And one more:
+
+Passing non-string input:
+
+    >>> text_indentation(123)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+
+Empty string:
+
+    >>> text_indentation("")a
