@@ -6,4 +6,4 @@ def text_indentation(text):
         print(i, end="")
         if i in ".?:":
             print("\n")
-            print("\n")
+
