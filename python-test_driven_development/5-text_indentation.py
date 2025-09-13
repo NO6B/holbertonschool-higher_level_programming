@@ -10,7 +10,6 @@ def text_indentation(text):
         text: The text to be printed.
     Raises:
         TypeError: If `text` is not a string.
-    
     """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
@@ -19,9 +18,7 @@ def text_indentation(text):
     for i in text:
         line += i
         if i in ".?:":
-            print(line.strip())
-            print()
+            print(line.strip(), end="\n\n")
             line = ""
     if line:
-
-        print(line.strip())
+        print(line.strip(), end="")
