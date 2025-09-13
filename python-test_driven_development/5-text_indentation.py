@@ -8,12 +8,13 @@ def text_indentation(text):
     """
     Args:
         text: The text to be printed.
-    raises:
+    Raises:
         TypeError: If `text` is not a string.
     
     """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
+
     line = ""
     for i in text:
         line += i
@@ -21,3 +22,5 @@ def text_indentation(text):
             print(line.strip())
             print()
             line = ""
+    if line:
+        print(line.strip())
