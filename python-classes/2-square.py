@@ -3,7 +3,11 @@
 
 
 class Square:
-    """square class with a private size"""
+    """Args:
+            Private instance attribute: size
+        Raises:
+            TypeError: if size is less than 0, raise a ValueError
+   """
     def __init__(self, size=0):
         self.__size = size
         if not isinstance(size, (int)):
