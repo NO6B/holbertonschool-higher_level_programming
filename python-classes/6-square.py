@@ -17,10 +17,12 @@ class Square:
         """Retrieve the size of the square"""
         return self.__size
 
+    @property
     def position(self):
         """Return position"""
         return self.__position
 
+    @position.setter
     def position(self, value):
         """property setter position """
         if (
