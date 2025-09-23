@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""FlyingFish class"""
+
+
 class Fish:
     """fish class"""
 
