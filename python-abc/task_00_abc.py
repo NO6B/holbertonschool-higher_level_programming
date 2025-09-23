@@ -5,17 +5,17 @@ from abc import ABC, abstractmethod
 
 class Animal(ABC):
     @abstractmethod
-    def Sound(self):
+    def sound(self):
         pass
 
 
 class Dog(Animal):
     """dog class"""
-    def Sound(self):
+    def sound(self):
         return "Bark"
 
 
 class Cat(Animal):
     """cat class"""
-    def Sound(self):
+    def sound(self):
         return "Meow"
