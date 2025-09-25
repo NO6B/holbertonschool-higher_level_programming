@@ -4,7 +4,7 @@ import math
 
 
 class Shape(ABC):
-    """a"""
+    """Define an abstract class Shape"""
     @abstractmethod
     def area(self):
         pass
@@ -15,7 +15,7 @@ class Shape(ABC):
 
 
 class Circle(Shape):
-    """a"""
+    """Circle class that inherits from Shape"""
 
     def __init__(self, radius):
         self.radius = radius
@@ -28,7 +28,7 @@ class Circle(Shape):
 
 
 class Rectangle(Shape):
-    """"""
+    """Rectangle class, also inheriting from Shape"""
 
     def __init__(self, width, height):
         self.height = height
