@@ -8,7 +8,7 @@ class VerboseList(list):
     def append(self, object):
         """Add an object to the list and print a message"""
         super().append(object)
-        print("Added [{}] to list.".format(object))
+        print("Added [{}] to the list.".format(object))
 
     def extend(self, iterable):
         """extending the list,"""
