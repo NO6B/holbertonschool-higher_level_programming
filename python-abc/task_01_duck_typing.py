@@ -31,8 +31,8 @@ class Rectangle(Shape):
     """Rectangle class, also inheriting from Shape"""
 
     def __init__(self, width, height):
-        self.height = height
         self.width = width
+        self.height = height
 
     def area(self):
         return self.height * self.width
