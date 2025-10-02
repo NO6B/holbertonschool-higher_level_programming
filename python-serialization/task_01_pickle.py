@@ -25,4 +25,5 @@ class CustomObject:
         if not filename:
             return None
         with open(filename, "rb") as f:
-            return pickle.load(f)
+            obj = pickle.load(f)
+            return obj
