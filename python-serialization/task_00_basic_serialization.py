@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-import pickle
 """2 function for serialize and deserialize"""
+import pickle
 
 
 def serialize_and_save_to_file(data, filename):
