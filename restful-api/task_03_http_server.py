@@ -5,7 +5,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 
 
-class MyHandler(BaseHTTPRequestHandler):
+class Server(BaseHTTPRequestHandler):
     """Class HTTP request manager"""
 
     def do_GET(self):
