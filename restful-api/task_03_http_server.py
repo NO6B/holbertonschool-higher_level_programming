@@ -1,9 +1,13 @@
+#!/usr/bin/env python3
+"""import json and http.server"""
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 import json
 
 
 class MyHandler(BaseHTTPRequestHandler):
+    """Class HTTP request manager"""
+
     def do_GET(self):
         if self.path == "/":
             self.send_response(200)
@@ -40,6 +44,7 @@ class MyHandler(BaseHTTPRequestHandler):
 
 
 def run(server_class=HTTPServer, handler_class=MyHandler):
+    """configure and launch the HTTP server"""
     server_address = ('', 8000)
     httpd = server_class(server_address, handler_class)
     print("Serveur lancé sur http://localhost:8000")
