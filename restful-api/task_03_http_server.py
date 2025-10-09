@@ -43,13 +43,8 @@ class MyHandler(BaseHTTPRequestHandler):
             self.send_error(404, "Endpoint not found")
 
 
-def run(server_class=HTTPServer, handler_class=MyHandler):
-    """configure and launch the HTTP server"""
-    server_address = ('', 8000)
-    httpd = server_class(server_address, handler_class)
-    print("Serveur lancé sur http://localhost:8000")
-    httpd.serve_forever()
-
-
 if __name__ == "__main__":
-    run()
+    port = 8000
+    httpd = HTTPServer(("", port), MyHandler)
+    print("Server running on port {}".format(port))
+    httpd.serve_forever()
