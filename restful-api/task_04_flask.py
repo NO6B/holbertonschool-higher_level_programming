@@ -34,7 +34,7 @@ def route_user(username):
         if user == username:
             return jsonify(users[username])
     else:
-        return jsonify({"error": "User not found"})
+        return jsonify({"error": "User not found"}), 404
 
 
 @app.route('/add_user', methods=['POST'])
@@ -42,14 +42,10 @@ def add_user():
     """add username"""
     json_data = request.get_json()
 
-    username = json_data.get("username")
-
-    if not username:
+    if not json_data.get("username"):
         return jsonify({"error": "Username is required"}), 400
 
-    return jsonify({
-        "message": "user added",
-        "user": json_data}), 201
+    return jsonify({"message": "User added", "user": json_data}), 201
 
 
 if __name__ == "__main__":
