@@ -5,6 +5,8 @@ from flask import jsonify
 
 app = Flask(__name__)
 
+users = {}
+
 
 @app.route('/')
 def home():
