@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+"""API Security"""
 from flask import Flask, jsonify, request
 from flask_httpauth import HTTPBasicAuth
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -12,7 +14,8 @@ users = {
 
 
 @app.route('/login', methods=['POST'])
-def loging():
+def login():
+    """login"""
     data = request.get_json()
     username = data.get("username")
     password = data.get("password")
